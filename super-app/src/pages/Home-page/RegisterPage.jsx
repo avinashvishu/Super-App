@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../../components/register/Banner'
-import Form from '../../components/register/Form'
+import Forms from '../../components/register/Form'
 import styles from './RegisterPage.module.css'
 
 function RegisterPage() {
@@ -8,7 +8,7 @@ function RegisterPage() {
     <>
     <div className={styles.FormContainer}>
       <Banner/>
-      <Form/>
+      <Forms/>
    </div>
     
     </>

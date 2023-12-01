@@ -1,0 +1,34 @@
+.contianer{
+    width: 100vw;
+    height: 100vh;
+  
+}
+.leftContainer{
+    border: 1px solid red;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.Logo{
+    color: #72DB73;
+    font-family: 'Single Day', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.SubHead{
+    width:min-content;
+    color: #FFFFFF;
+    font-size: 5.5rem;
+    font-weight: 600;
+    font-family:'Robot',sans-serif;
+    border: 1px solid red;
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Form.module.css";
-import { useFormik} from "formik";
+import { useFormik,Formik,Form,Field} from "formik";
 import { basicSchema } from "../../schemas";
 import { useNavigate } from "react-router-dom";
 
 
 
 
-const Form = () => {
+const Forms = () => {
   const navigate =useNavigate();
   const onSubmit=(values,actions)=>{
     
@@ -65,6 +65,7 @@ const Form = () => {
             </div>
           </div>
           <div className={styles.checkbox}>
+          
             <input type="checkbox" name="checkbox" id="checkbox" />
             <label htmlFor="checkbox">
             Share my registration data with Superapp
@@ -82,4 +83,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Forms;

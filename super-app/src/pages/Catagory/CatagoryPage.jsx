@@ -1,8 +1,11 @@
 import React from 'react'
+import Catagory from '../../components/genre/Catagory'
 
 const CatagoryPage = () => {
   return (
-    <div style={{color:'white'}} >CatagoryPage</div>
+    <>
+    <Catagory />
+    </>
   )
 }
 
