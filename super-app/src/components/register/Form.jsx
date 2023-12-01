@@ -17,7 +17,7 @@ const Form = () => {
     let data = JSON.stringify(values);
     localStorage.setItem("UserData",data)
     console.log('submitted')
-    navigate('/genre')
+    navigate('/catagory')
   }
  
     const {values,errors,touched,handleBlur,handleChange,handleSubmit}=useFormik({
