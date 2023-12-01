@@ -1,0 +1,14 @@
+.FormContainer{
+    display: flex;
+}
+  
+  
+  /* Responsive design */
+
+  @media screen and (max-width: 1200px){
+    .FormContainer{
+        display: flex;
+        flex-direction: column;
+    }
+  
+  }
