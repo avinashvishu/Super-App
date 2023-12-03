@@ -12,8 +12,10 @@ function App() {
    
     <Routes>
        <Route path="" element={<RegisterPage />} />
-      <Route path="/register" element={<RegisterPage />}   />
-      <Route path='/catagory' element={<CatagoryPage />} ></Route>
+      <Route path="/register" element={<RegisterPage />} />
+      <Route path='/catagory' element={<CatagoryPage />} />
+      <Route path='/catagory' element={<CatagoryPage />} />
+      
     </Routes>
 
     </>

@@ -1,10 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Single+Day&display=swap');
 .contianer{
     width: 100vw;
     height: 100vh;
-  
+    display: flex;
+}
+
+.rightContainer{
+    width: 60vw;
+    height: 100vh;
+    /* border: 8px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TilesContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+.catTiles{
+    border-radius: 1rem;
+    height: 18rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.catTiles:hover{
+    scale: 1.1;
+}
+.catTiles h1{
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #FFFFFF;
+    align-self: flex-start;
+    margin-left: 2.5rem;
 }
 .leftContainer{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40%;
     height: 100%;
     display: flex;
@@ -12,11 +50,37 @@
     justify-content: center;
     align-items: center;
 }
+
+.leftcontentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid green; */
+}
 .leftContent{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: start;
+    /* border: 1px solid blue; */
+    min-height: 80vh;
+}
+.selectedCat{
+    width: 100%;
+    min-height: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    /* border: 5px dashed firebrick; */
+}
+
+.errmsg{
+    font-family: 'Roboto',sans-serif;
+}
+.errormsg{
+    grid-column: span 3;
 }
 .Logo{
     color: #72DB73;
@@ -30,5 +94,49 @@
     font-size: 5.5rem;
     font-weight: 600;
     font-family:'Robot',sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+
+.NextBtn{
+    justify-self: end;
+    grid-column: span 3;
+    margin-top: 5rem;
+    background-color: #148A08;
+    color:#FFFFFF;
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    height: 4rem;
+    width: 14rem;
+    border-radius: 2rem;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1200px){
+    .contianer{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftContainer{
+        width: 100vw;
+    }
+    .rightContainer{
+        width: 100vw;
+    }
+  }
+
+  @media screen and (max-width:500px){
+    .leftContainer{
+        margin-top: 10vh;
+        height: 40vh;
+    }
+    .rightContainer{
+        height: 60vh;
+    }
+    .leftContent{
+        justify-content: center;
+        gap: 2rem;
+        width: 80vw;
+    }
+  }
