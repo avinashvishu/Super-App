@@ -1,0 +1,19 @@
+.notesSec {
+  background-color: #f1c75b;
+  width: 50rem;
+  height: inherit;
+  border-radius: 2rem;
+  grid-row: span 2;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  border-radius: 2rem;
+}
+
+.notesSec h1 {
+  font-size: 3.8rem;
+}
+
+.textAreaWrap input {
+  height: 50rem;
+}

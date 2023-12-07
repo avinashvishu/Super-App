@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState ,useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import styles from './catagory.module.css'
 import Action from './../../assets/images/Action.png'
 import Drama from '../../assets/images/Drama.png'
@@ -72,6 +73,7 @@ const Catagory = () => {
   ]
   const [catagory,setCatagory]=useState([])
   const [lenghterror,setLenghtError]=useState(false)
+  const nav = useNavigate()
   const handleClick=()=>{
     if(catagory.length<3){
       setLenghtError(true)
@@ -80,6 +82,7 @@ const Catagory = () => {
       setLenghtError(false)
       const key=JSON.stringify([...catagory])
       window.localStorage.setItem('UserChoices',key)
+      nav('/dashBoard')
     }
   }
 

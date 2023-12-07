@@ -13,10 +13,10 @@ const Forms = () => {
     
     console.log(values)
     console.log(actions)
-    alert(JSON.stringify(values, null,1));
+  
     let data = JSON.stringify(values);
     localStorage.setItem("UserData",data)
-    console.log('submitted')
+   
     navigate('/catagory')
   }
  

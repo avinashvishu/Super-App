@@ -1,35 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-size: 10px;
-    background-color: #000000;
+::selection {
+  color: rgb(237, 137, 36);
 }
-input{
-    border: none;
+
+html {
+  font-size: 10px;
+  background-color: #000000;
+}
+input {
+  border: none;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-button{
-    border: none;
+button {
+  border: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Roboto:wght@900&family=Single+Day&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Roboto:wght@900&family=Single+Day&display=swap");
 
 /* Responsive */
 
-@media screen and (max-width: 1200px){
-    html{
-        font-size: 8px;
-    }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 8px;
+  }
 }
 
-@media screen and (max-width:500px){
-    html{
-        font-size: 5px;
-    }
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
 }

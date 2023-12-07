@@ -1,0 +1,26 @@
+.gridlayout {
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2);
+  gap: 6rem;
+  color: #ffffff;
+}
+
+.UserInfoWrap {
+  width: 50rem;
+  height: 30rem;
+  border-radius: 2rem;
+}
+.notes {
+  display: flex;
+  width: 50rem;
+  height: 100%;
+  grid-row: span 2;
+}
+.weather {
+  background-color: #101744;
+  width: 50rem;
+  height: 20rem;
+  border-radius: 2rem;
+}
