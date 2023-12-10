@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Browse = () => {
   const [userchoice]=useState(JSON.parse(localStorage.getItem("UserChoices")));
-  const nav = useNavigate()
   const [movieDetials,setDetials]=useState([])
+  const nav = useNavigate()
   const genreCodes={
     action:28,
     drama:18,
@@ -20,10 +20,6 @@ const Browse = () => {
     fiction:9648,
   }
 const fetchMovieApi=async(moviecode)=>{
-   
-     
-// let url=`https://api.themoviedb.org/3/discover/movie?api_key=624cfe6e36baedf541eaabb6feb8acca&language=en-US&sort_by=release_date.desc&page=1&with_genres=${moviecode}`
-
  try{
     const res=await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=624cfe6e36baedf541eaabb6feb8acca&language=en-US&sort_by=release_date.desc&page=1&with_genres=${moviecode}`)
 
@@ -49,6 +45,13 @@ useEffect(()=>{
     fetchMovies(codes)
 },[])
     
+const capitalizeWords = (str) => {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
 
    
     
@@ -68,8 +71,24 @@ console.log(movieDetials)
         </div>
         <h2>Entertainment according to your choice</h2>
         <div className={styles.details}>
-              {movieDetials.length>1?(movieDetials.map(()=>{
-                     
+              {movieDetials.length>1?(movieDetials.map((item,i)=>{
+                return(<div className={styles.genreBox} >
+                            <span className={styles.GenreHead}>{capitalizeWords(userchoice[i])}</span>
+                            <div className={styles.genreSection} >
+                                {item.map(({ poster_path, backdrop_path }) => {
+                    //[{},{},{}]
+                    return (
+                      <img
+                        src={`https://image.tmdb.org/t/p/w500/${
+                          poster_path ? poster_path : backdrop_path
+                        }`}
+                        alt="movie img"
+                        style={{height:'25rem',width:'30rem'}}
+                      />
+                    );
+                  })}
+                            </div>
+                     </div>)
               })):<></>}
         </div>
 

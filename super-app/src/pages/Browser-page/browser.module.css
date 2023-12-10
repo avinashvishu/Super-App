@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 10rem 0 10rem;
-  border: 1px solid red;
 }
 
 .header span {
@@ -24,11 +23,32 @@
 .container h2 {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
 }
 
 .details {
   width: 100vw;
   height: 58rem;
+  overflow-y: scroll;
+}
 
-  overflow: hidden;
+.genreBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.GenreHead {
+  color: #878787;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.genreSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
