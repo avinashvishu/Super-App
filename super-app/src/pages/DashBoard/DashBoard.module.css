@@ -1,10 +1,20 @@
+.outerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .gridlayout {
-  width: max-content;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2);
-  gap: 4rem;
+
   color: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
 .UserInfoWrap {
@@ -15,7 +25,7 @@
 .notes {
   display: flex;
   width: 40rem;
-  height: 100%;
+  height: 95%;
   grid-row: span 2;
   overflow: hidden;
   border-radius: 2rem;
@@ -26,4 +36,37 @@
   height: 15rem;
   border-radius: 2rem;
   overflow: hidden;
+}
+
+.UserInfoWrap,
+.notes,
+.weather {
+  justify-self: center;
+}
+
+.NewsSec {
+  grid-row: span 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timmerSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 4rem;
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: #ffffff;
+  background-color: #148a08;
+  cursor: pointer;
 }
