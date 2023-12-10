@@ -4,6 +4,7 @@ import './App.css'
 import RegisterPage from './pages/Home-page/RegisterPage'
 import CatagoryPage from './pages/Catagory/CatagoryPage'
 import DashBoard from './pages/DashBoard/DashBoard'
+import Browse from './pages/Browser-page/Browse'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/register" element={<RegisterPage />} />
       <Route path='/catagory' element={<CatagoryPage />} />
       <Route path='/dashBoard' element={<DashBoard />} />
+      <Route path='/browser' element={<Browse />} />
       
     </Routes>
 

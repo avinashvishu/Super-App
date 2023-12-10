@@ -5,8 +5,14 @@ import Notes from '../../components/Notes/Notes'
 import Weather from '../../components/weather/weather'
 import Timer from '../../components/Timmer/Timer'
 import News from '../../components/news/News'
-
+import { useNavigate } from 'react-router-dom'
+ 
 const DashBoard = () => {
+  const nav = useNavigate();
+  const handleClick=()=>{
+     nav('/browser')
+  }
+
   return (<>
     <div className={styles.outerGrid}>
     <div className={styles.gridlayout}>
@@ -19,7 +25,7 @@ const DashBoard = () => {
     <div className={styles.timmerSec} > <Timer /> </div>
 
     </div>
-    <button className={styles.button} >Browser</button>
+    <button className={styles.button} onClick={handleClick} >Browser</button>
     </>
   )               
 }
