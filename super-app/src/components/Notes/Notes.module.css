@@ -1,19 +1,42 @@
 .notesSec {
   background-color: #f1c75b;
-  width: 50rem;
+  width: 40rem;
   height: inherit;
   border-radius: 2rem;
-  grid-row: span 2;
   padding: 2rem;
   font-family: "Roboto", sans-serif;
   color: black;
   border-radius: 2rem;
+  overflow: hidden;
 }
 
 .notesSec h1 {
   font-size: 3.8rem;
 }
 
-.textAreaWrap input {
-  height: 50rem;
+.textSec {
+  background-color: #f1c75b;
+  color: black;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  width: 35rem;
+  height: 35rem;
+  margin-top: 1rem;
+}
+
+.textSec::-webkit-scrollbar-thumb {
+  background: #ffe6a6;
+  border-radius: 2rem;
+}
+
+.textSec::-webkit-scrollbar {
+  width: 2rem;
+}
+
+.textSec::selection {
+  color: rgb(10, 88, 255);
+  background: transparent;
+  text-shadow: #000 0 0 2px;
 }

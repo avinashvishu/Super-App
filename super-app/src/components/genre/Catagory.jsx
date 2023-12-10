@@ -164,7 +164,6 @@ const Tiles=({data,catagory,setCatagory,index})=>{
           setCatagory([...catagory])
       }else{
         setCatagory([...catagory,data.type])
-        console.log('clicked')
       }
       setSelected(!isSelected)
   }

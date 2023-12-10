@@ -3,24 +3,27 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2);
-  gap: 6rem;
+  gap: 4rem;
   color: #ffffff;
 }
 
 .UserInfoWrap {
-  width: 50rem;
-  height: 30rem;
+  width: 40rem;
+  height: 25rem;
   border-radius: 2rem;
 }
 .notes {
   display: flex;
-  width: 50rem;
+  width: 40rem;
   height: 100%;
   grid-row: span 2;
+  overflow: hidden;
+  border-radius: 2rem;
 }
 .weather {
   background-color: #101744;
-  width: 50rem;
-  height: 20rem;
+  width: 40rem;
+  height: 15rem;
   border-radius: 2rem;
+  overflow: hidden;
 }

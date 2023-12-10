@@ -4,7 +4,9 @@
 }
 
 ::selection {
-  color: rgb(237, 137, 36);
+  color: orange;
+  background: transparent;
+  text-shadow: #5cf000 0 0 0.5rem;
 }
 
 html {

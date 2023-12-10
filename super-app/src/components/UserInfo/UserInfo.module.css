@@ -4,8 +4,8 @@
 
 .UserInfo {
   background-color: #5746ea;
-  width: 50rem;
-  height: 30rem;
+  width: 40rem;
+  height: 25rem;
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -15,18 +15,18 @@
 }
 
 .UserProfile {
-  height: 25rem;
+  height: 20rem;
 }
 
 .TilesContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1.2rem;
   padding: 1rem;
   margin-top: 2rem;
   justify-items: center;
   align-items: center;
-  max-height: 8rem;
+  max-height: 6.5rem;
   overflow: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none;
