@@ -16,7 +16,6 @@ const Weather = () => {
             axios.get('http://api.weatherapi.com/v1/current.json?key=c44386b744c14eaface142928230912&q=Mumbai&aqi=no')
             .then(function (response) {
               // handle success
-              console.log("from api call",response.data)
               setInfo(response.data)
             })
             .catch(function (error) {
