@@ -69,7 +69,7 @@ console.log(movieDetials)
         <h2>Entertainment according to your choice</h2>
         <div className={styles.details}>
               {movieDetials.length>1?(movieDetials.map(()=>{
-                
+                 
               })):<></>}
         </div>
 
